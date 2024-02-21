@@ -184,12 +184,7 @@ console.log(str); // 'abcd'
 
 ## Skills Check Setup Demo
 
-## Skills Check Practice (40m)
+## Skills Check Practice
 
 - This should feel like a challenge
 - Don't worry about getting 100% on the tests
-
-## Practice Session 4 
-
-- Until EOD time permitting
-- Keep Working on Mutability Heading
