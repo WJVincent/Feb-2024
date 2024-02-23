@@ -51,7 +51,7 @@ console.log(spliceArr);
 /*
 Split
 
-1. Does not mutate input array
+1. Does not mutate input string
 2. Splits a string into a new array
 
 string.split(separator, limit)
