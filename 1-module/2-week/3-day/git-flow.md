@@ -46,6 +46,8 @@ Make sure you are running commands in the correct directory. Always run `ls` bef
 
 #### 1. Accept invitation to repo
 
+#### 2. Clone the repo `git clone {url}`
+
 ## Swapping Roles
 
 ### Driver -> Navigator
