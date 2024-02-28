@@ -62,6 +62,8 @@
 
 Check out the git-flow.md file attached for step by step instructions.
 
+Demo and Code-Along for getting a project onto github and ready for pairing
+
 ## Callbacks Project Long Practice (Paired, Until EOD)
 
 If you finish this, feel free to go back to work on the POJO Basics Long Practice / Advanced Arrays Long Practice.  
