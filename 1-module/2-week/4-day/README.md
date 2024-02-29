@@ -36,7 +36,7 @@ let globalScope = 'I am globally scoped';
 let myFunction = function(functionScope){
   let alsoFunctionScope = "I am also function scoped";
   if(!functionScope){
-    let blockScope = 'I am block scoped";
+    let blockScope = "I am block scoped";
   };
 };
 
