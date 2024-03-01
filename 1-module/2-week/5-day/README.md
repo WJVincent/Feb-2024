@@ -2,6 +2,5 @@
 
 - PA
 - PA Walkthrough
-- Collaborative Problem Solving
 - Study Time
 - Kahoot
