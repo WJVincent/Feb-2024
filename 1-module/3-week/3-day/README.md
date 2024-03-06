@@ -60,5 +60,3 @@ const myExpressionFunc = function (){
 - I reccomend starting over on the practices from yesterday and going back through everything
 - Use the debugger to help you analyze your recursive functions
 - You can also practice using the js-challenges/recursion-prompts repo that I shared yesterday
-
-## Implicit Bias EOD Workshop
