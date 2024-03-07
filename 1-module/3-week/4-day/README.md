@@ -1,9 +1,21 @@
 # M1-W3-D4
 
+- Announcements
 - The Event Loop
 - setTimeout && setInterval
 
 ## Cameras On Reminder
+
+## Assessment Policy Change
+
+- You do not need to pass assessments that you have already passed prior to a deferral
+- You do need to take the assessment with the same policies as other students, we will just not be officially grading them. 
+- You are still required to submit and work through the problems as normal.
+
+## Weekly Report Change
+
+- Weekly reports will now be released on Friday at 12 PST.
+- They are due prior to starting class on Monday.
 
 ## The Event Loop
 
