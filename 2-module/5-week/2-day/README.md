@@ -1,6 +1,11 @@
 # M2-W5-D2
 
 - Arrays
+- Memory
+- Truth Tables
+- Binary && Hexadecimal
+- ASCII 
+- Conversions
 
 ## Arrays
 
