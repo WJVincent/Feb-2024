@@ -78,63 +78,63 @@ Ignore Insignificant Factors
 
 Lets Practice!
 ```
-5n^2 + 2n + 5 => ??
+5n^2 + 2n + 5 => O(n^2)
 
-n * n + n => ??
+n * n + n => O(n^2)
 
-2 + 3 => ??
+2 + 3 => O(1)
 ```
 
 
 ```js
-//time complexity
+//time complexity 
 
-function printTripleSums(n) {
+function printTripleSums(n) { // O(n^3)
 
-  for (let i = 0 ; i < n ; i++) {
+  for (let i = 0 ; i < n ; i++) { //O(n)
 
-    for (let j = 0 ; j < n ; j++) {
-
-      for (let k = 0 ; k < n ; k++) {
+    for (let j = 0 ; j < n ; j++) { //O(n)
+ 
+      for (let k = 0 ; k < n ; k++) { //O(n)
         console.log(`${i} + ${j} + ${k} = ${i + j + k}`);
       }
     }
   }
 }
 
-function printLettersNTimes(n) {
+function printLettersNTimes(n) { //O(n)
 
   const letters = "abcdefghijklmnopqrstuvwxyz";
 
-  for (let i = 0 ; i < letters.length ; i++) {
+  for (let i = 0 ; i < letters.length ; i++) { //O(1)
 
-    for (let j = 0 ; j < n ; j++) {
+    for (let j = 0 ; j < n ; j++) { //O(n)
       console.log(letters[i]);
     }
   }
 }
 
-function printNumbersTwice(n) {
+function printNumbersTwice(n) {// O(n)
 
-  for (let i = 0 ; i < n ; i++) {
+  for (let i = 0 ; i < n ; i++) { //O(n)
     console.log(i);
   }
 
-  for (let j = 0 ; j < n ; j++) {
+  for (let j = 0 ; j < n ; j++) { //O(n)
     console.log(j);
   }
 }
 
-function printPairSumsThenPrintNums(n) {
+function printPairSumsThenPrintNums(n) { //O(n^2)
 
-  for (let i = 0 ; i < n ; i++) {
+  for (let i = 0 ; i < n ; i++) { //O(n)
 
-    for (let j = 0 ; j < n ; j++) {
+    for (let j = 0 ; j < n ; j++) { // O(n)
       console.log(`${i} + ${j} = ${i + j}`);
     }
   }
 
-  for (let k = 0 ; k < n ; k++) {
+  for (let k = 0 ; k < n ; k++) { //O(n)
     console.log(k);
   }
 }
@@ -143,10 +143,10 @@ function printPairSumsThenPrintNums(n) {
 ```js
 //space complexity
 
-const addNums = (n1, n2) => n1 + n2;
+const addNums = (n1, n2) => n1 + n2; //O(1)
 
-function createMatrix(max){
-    const matrix = [];
+function createMatrix(max){ //O(n^2)
+    const matrix = []; //O(n^2)
 
     for(let i = 0; i < max; i++){
         matrix.push([]);
