@@ -9,6 +9,8 @@
 
 ## Cameras On Reminder
 
+## Lecture Notes and 1:1 Link Reminder
+
 ## Arrays
 
 > An array is a sequence of elements of the same type stored in a contiguous block of memory.
@@ -35,8 +37,75 @@ the amount of space allocated is identical for any number within that range.
 00000000 00000000 00000000 00000000
 
 112      113      114      115
-00000000 00000000 00000000 ## Memory
+00000000 00000000 00000000 00000000
+
+116      117      118      119
+00000000 00000000 00000000 00000000
 ```
+
+lets say these are the numbers we want to store `[0, 1, 4000, 1_000_000_564]`
+
+we need to translate these numbers into binary to be stored in memory
+
+```
+104      105      106      107
+00000000 00000000 00000000 00000000 --- 0
+
+108      109      110      111
+00000000 00000000 00000000 00000001 --- 1
+
+112      113      114      115
+00000000 00000000 00001111 10100000 --- 4000
+
+116      117      118      119
+00111011 10011010 11001100 00110100 --- 1_000_000_564
+```
+
+valueAddress = starting address of the value we are accessing
+startAddres = starting address of the array block
+index = the index of the array
+sizeOf = how many memory slots does each item take up
+
+to find an index we use this formula `valueAddress = startAddress + index * sizeof(dataType)`
+
+this is super efficient. Regardless of the array size the amount of operations is constant meaning accessing data by index is an O(1) operation.
+
+examples:
+
+| | valueAddress | startAddress | index | dataSize |
+|-- |-- |-- |-- |-- |
+|arr[0]| 104| 104 | 0 |   4 |
+|arr[1]| 108| 104 | 1 |   4 |
+|arr[3]| 116| 104 | 3 |   4 |
+|arr[4]| 120| 104 | 4 |   4 |
+
+## Array Resizing 
+
+This is one of the more expensive operations arrays have. 
+
+In the previous example we had an array that was allocated 16bytes, if we need to store one more 32bit integer, we would need to reallocate space. This would assign the array to a new contiguous block of memory and copy over the previous values.
+If we were to run `arr.push(0)` it could look like this. 
+
+```
+200      201      202      203
+00000000 00000000 00000000 00000000 --- 0
+
+204      205      206      207
+00000000 00000000 00000000 00000001 --- 1
+
+208      209      212      211
+00000000 00000000 00001111 10100000 --- 4000
+
+212      213      214      215
+00111011 10011010 11001100 00110100 --- 1_000_000_564
+
+216      217      218      219
+00000000 00000000 00000001 00000000 --- 0
+```
+
+Due to how expensive it is to reallocate memory for an array, it is common practice for dynamic languages to overallocate space on the creation on the array.
+
+## Memory
 
 ### RAM (Random Access Memory)
 - What does it hold?
