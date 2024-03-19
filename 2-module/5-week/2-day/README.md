@@ -134,6 +134,8 @@ We can think of True as 1 and False as 0. 1 references a point in your computer 
 
 Here is the same table as above with 0s and 1s
 
+AND - If both
+
 | A   | B   | A && B |
 | --- | --- | ------ |
 | 1   | 0   | 0      |
@@ -152,13 +154,7 @@ OR - If either one, or the other
 | 0   | 1   | 1        |
 | 0   | 0   | 0        |
 
-XOR - If one or the other, but not both
-
-- Denoted with the carrot symbol " ^ "
-
-| A   | B   | A ^ B |
-| --- | --- | ----- |
-| 1   | 0   | 1     |
+XOR - If one or the other, but not bo01100001
 | 1   | 1   | 0     |
 | 0   | 1   | 1     |
 | 0   | 0   | 0     |
