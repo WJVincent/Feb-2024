@@ -4,6 +4,8 @@
 - Logarithm
 - Binary Search
 
+## Cameras On Reminder
+
 ## Practice: Quicksort (SOLO, 1h)
 
 ## Quicksort Walkthrough
