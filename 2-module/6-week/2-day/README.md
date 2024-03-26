@@ -21,3 +21,7 @@
 ## Binary Search Walkthrough
 
 ## Custom Sorting Project (PAIRED)
+
+## Homework
+
+When you are finished with the long practice start on tonights homework, trees are a big subject that deserve a lot of thought
