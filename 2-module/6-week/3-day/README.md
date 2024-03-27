@@ -1,7 +1,7 @@
 # M2-W6-D3
 
-- Binary Trees
-- Binary Search Trees
+-   Binary Trees
+-   Binary Search Trees
 
 ## Intro to Trees (30m)
 
@@ -11,7 +11,8 @@
   (Linked Lists and Trees are subtypes of graphs).
 - A Tree is a graph that doesn't have any cycles, each node must have only one
   parent.
-- A Binary Tree is a Tree where nodes have at most two children.
+- A Binary Tree is a Tree where nodes have at most two children. (A lnked list
+  satisfies this condition so it also falls under the binary tree umbrella.)
 
 ### Terms
 
@@ -37,8 +38,15 @@ class Node {
     this.val = val;
     this.left = null;
     this.right = null;
-  }(A linked list
-  satisfies this condition so it also falls under the binary tree umbrella.)
+  }
+}
+
+const a = new Node('a');
+const b = new Node('b');
+const c = new Node('c');
+const d = new Node('d');
+const e = new Node('e');
+const f = new Node('f');
 
 a.left = b;
 a.right = c;
@@ -133,8 +141,17 @@ Access each value in order as you traverse.
 
 The order would be: `1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7`
 
-(A linked list
-  satisfies this condition so it also falls under the binary tree umbrella.)
+
+### Post-order Traversal
+
+Access each value as you traverse after recursing.
+
+1. Recursively call the left subtree
+2. Recursively call the right subtree
+3. Print the current node
+
+The order would be: `1 -> 3 -> 2 -> 5 -> 7 -> 6 -> 4`
+
 ### Depth First vs. Breadth First Traversal
 
 All of the above traversal orders are actually under the depth first umbrella.
