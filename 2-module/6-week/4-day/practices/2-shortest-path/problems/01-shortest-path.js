@@ -26,7 +26,27 @@ const adjList = {
 }
 
 function shortestPath(start, end) {
-  // Your code here 
+	const q = [[start]];
+	const visited = new Set();
+	
+	while(q.length){
+		//1. grab the current path
+		const currPath = q.shift();
+		const currNode = currPath[currPath.length - 1];
+
+		//2. do the thing
+		if(currNode === end) return currPath;	
+
+		//3. add neighbors
+		adjList[currNode].forEach(el => {
+			if(!visited.has(el)){
+				visited.add(el);
+				q.push([...currPath, el]);
+			}
+		});
+	};
+	
+	return null;
 }
 
 // console.log(shortestPath(1, 3)); // -> [ 1, 2, 3 ] (One possible solution)
