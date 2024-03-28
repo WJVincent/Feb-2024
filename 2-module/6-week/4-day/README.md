@@ -87,31 +87,31 @@ const undirected = {
 - For each unvisited neighbor, add it to the visited nodes and to the top
    of the stack.
 
-## Practice: Refactor Breadth First Traversal (SOLO, 25m)
+## Practice: Refactor Breadth First Traversal (SOLO, 20m)
 
 ## Walkthrough: Refactor Breadth First Traversal 
 
 ---
 
-## Practice: Simple Breadth First Search (SOLO, 25m)
+## Practice: Simple Breadth First Search (SOLO, 20m)
 
 ## Walkthrough: Simple Breadth First Search
 
 ---
 
-## Practice: A Shortest Path (SOLO, 25m)
+## Practice: A Shortest Path (SOLO, 20m)
 
 ## Walkthrough: A Shortest Path
 
 ---
 
-## Practice: Degrees of Separation (SOLO, 25m)
+## Practice: Degrees of Separation (SOLO, 20m)
 
 ## Walkthrough: Degrees of Separation
 
 ---
 
-## Practice: Social Graph (SOLO, 40m)
+## Practice: Social Graph (SOLO, 30m)
 
 ## Walkthrough: Social Graph
 
@@ -145,7 +145,7 @@ const bfs = (matrix, target) => {
 
 ---
 
-## Practice: Breadth First Search with Matrix Practice (SOLO, 40m)
+## Practice: Breadth First Search with Matrix Practice (SOLO, 30m)
 
 ## Walkthrough: Breadth First Search with Matrix Practice
 
@@ -153,7 +153,7 @@ const bfs = (matrix, target) => {
 
 ## Practice: Solving Graph Problems (SOLO, 40m)
 
-## Walkthrough: Solving Graph Problems (SOLO, 40m)
+## Walkthrough: Solving Graph Problems
 
 ---
 
