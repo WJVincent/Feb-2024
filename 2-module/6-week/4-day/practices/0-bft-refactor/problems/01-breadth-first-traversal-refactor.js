@@ -18,7 +18,7 @@ const adjList = {
 
 function breadthFirstTraversal(start) {
 	const q = [start];
-	const visited = new Set().add(start);
+	const visited = new Set(q);
 	const res = [];
 
 	while(q.length){

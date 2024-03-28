@@ -79,9 +79,9 @@ const undirected = {
 - Create a queue and enqueue the starting node
 - Create a set to store visited nodes
 - While the queue is not empty, repeat steps 4-6
-- Dequeue the first node
-- DO THE THING THAT YOU NEED TO FOR THE DEQUEUED NODE
-- For each unvisited neighbor, add it to the visited nodes and to the back of
+  - Dequeue the first node
+  - DO THE THING THAT YOU NEED TO FOR THE DEQUEUED NODE
+  - For each unvisited neighbor, add it to the visited nodes and to the back of
    the queue
 
 ### DFS
@@ -89,11 +89,11 @@ const undirected = {
 - Create a stack and push the starting node
 - Create a set to store visited nodes, and add the starting node
 - While the stack is not empty, repeat steps 4-6
-- Pop the node on the top of the stack.
-- DO THE THING THAT YOU NEED TO FOR THE DEQUEUED NODE
+  - Pop the node on the top of the stack.
+  - DO THE THING THAT YOU NEED TO FOR THE DEQUEUED NODE
     -  For example, add it to a running total, print it, or save it in an array
-- For each unvisited neighbor, add it to the visited nodes and to the top
-   of the stack.
+    - For each unvisited neighbor, add it to the visited nodes and to the top
+    of the stack.
 
 ## Practice: Refactor Breadth First Traversal (SOLO, 20m)
 
