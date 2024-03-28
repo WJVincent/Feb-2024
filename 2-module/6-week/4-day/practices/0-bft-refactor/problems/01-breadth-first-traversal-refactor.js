@@ -17,8 +17,28 @@ const adjList = {
 }
 
 function breadthFirstTraversal(start) {
-  // Your code here 
-}
+	const q = [start];
+	const visited = new Set().add(start);
+	const res = [];
+
+	while(q.length){
+		//1. grab the node
+		const node = q.shift();
+
+		//2. do something with the node
+		res.push(node);
+
+		//3. find and add the neighbors
+		const neighbors = adjList[node];
+		neighbors.forEach(el => {
+			if(!visited.has(el)){
+				visited.add(el);
+				q.push(el);
+			};
+		});
+	};
+	return res;
+};
 
 // console.log(breadthFirstTraversal(3)); // [3, 2, 4, 1, 5, 6]
 // console.log(breadthFirstTraversal(6)); // [6, 4, 3, 5, 2, 1]
