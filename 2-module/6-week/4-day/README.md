@@ -4,6 +4,14 @@
     - Adjacency Lists
     - Matrices
 
+## Practice Solutions
+
+It is very rare that I will be uploading solutions to practices.
+
+Due to the difficulty of todays material and the pace at which we will need to move to cover everything I decided to upload all of the walkthroughs today.
+
+Don't expect this to be a new normal!
+
 ## Graphs
 
 ### What is a graph?
