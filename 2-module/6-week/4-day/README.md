@@ -1,5 +1,9 @@
 # M2-W6-D4
 
+- Graphs
+    - Adjacency Lists
+    - Matrices
+
 ## Graphs
 
 ### What is a graph?
@@ -156,3 +160,4 @@ const bfs = (matrix, target) => {
 ## Practice: Counting Islands (SOLO, 1h)
 
 ## Walkthrough: Counting Islands
+
