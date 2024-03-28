@@ -1,18 +1,48 @@
 function findNeighbors(node, matrix) {
+    const res = [];
+    const [row, col] = node;
     // Up
-
+    if(row - 1 >= 0) res.push([row - 1, col]);
     // Down
-
+    if(row + 1 < matrix.length) res.push([row + 1, col]);
     // Left
-
+    if(col - 1 >= 0) res.push([row, col - 1]);
     // Right
+    if(col + 1 < matrix[row].length) res.push([row, col + 1]);
 
-    // Your code here 
+    return res;
 }
 
 
 function bfsPath(matrix, startNode, endValue) {
-    // Your code here 
+    const q = [startNode];
+    const v = new Set().add(`${startNode[0]},${startNode[1]}`);
+    const res = [];
+
+    while(q.length){
+        //1. get currNode
+        const currNode = q.shift();
+
+        //2. do some things
+        res.push(currNode);
+        
+        if(matrix[currNode[0]][currNode[1]] === endValue){
+            return res;
+        }
+        
+        //3. find neighbors
+        const neighbors = findNeighbors(currNode, matrix);
+        neighbors.forEach(el => {
+            const strEl = `${el[0]},${el[1]}`;
+
+            if(!v.has(strEl)){
+                v.add(strEl);
+                q.push(el);
+            }
+        })
+    }
+
+    return false;
 }
 
 
@@ -26,7 +56,7 @@ function bfsPath(matrix, startNode, endValue) {
 // ];
 
 // // EXAMPLE TESTS #1. Tests for findNeighbors function
-// console.log(findNeighbors([1,1], matrix1)) // Finds all 4 neighbors from an
+
 // // internal node (left, right, down, up)
 // // [ [ 0, 1 ], [ 2, 1 ], [ 1, 2 ], [ 1, 0 ] ]
 
