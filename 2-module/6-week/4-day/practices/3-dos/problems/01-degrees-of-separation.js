@@ -25,7 +25,7 @@ const adjList = {
 
 function degreesOfSeparation(start, end) {
 	const q = [[start]];
-	const v = new Set();
+	const v = new Set().add(start);
 
 	while(q.length){
 		const currPath = q.shift();
