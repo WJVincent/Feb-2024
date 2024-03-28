@@ -1,43 +1,39 @@
 function getNeighbors(row, col, graph) {
+    const res = [];
+    
+    if(graph[row - 1] && graph[row - 1][col]) res.push([row - 1, col]);
+    if(graph[row + 1] && graph[row + 1][col]) res.push([row + 1, col]);
+    if(graph[row] && graph[row][col - 1]) res.push([row, col - 1]);
+    if(graph[row] && graph[row][col + 1]) res.push([row, col + 1]);
 
-  // Check top
-
-  // Check bottom
-
-  // Check left
-
-  // Check right
-
-  // Return neighbors
-
-  // Your code here 
+    return res;
 }
 
 
 function islandSize(row, col, graph) {
+    const q = [[row, col]];
+    const v = new Set().add(`${row},${col}`);
+    let size = 0;
 
-  // Create a visited set to store visited nodes
+    while(q.length){
+        //1. get the node
+        const currNode = q.shift();
 
-  // Create a stack, put the starting node in the stack
+        //2. do the thing
+        size++;
 
-  // Put the stringified starting node in visited
+        //3. traverse
+        const neighbors = getNeighbors(currNode[0], currNode[1], graph);
+        neighbors.forEach(el => {
+            const elStr = `${el[0]},${el[1]}`;
+            if(!v.has(elStr)){
+                v.add(elStr);
+                q.push(el);
+            };
+        });
+    };
 
-  // Initialize size to 0
-
-  // While the stack is not empty,
-
-    // Pop the first node
-
-    // DO THE THING (increment size by 1)
-
-    // Then push all the UNVISITED neighbors on top of the stack
-    // and mark them as visited
-    // HINT: This is what your helper function `getNeighbors` is for
-    // HINT: Remember, you're storing your visited nodes as strings!
-
-  // return size
-
-  // Your code here 
+    return size;
 }
 
 module.exports = [getNeighbors, islandSize];
