@@ -16,12 +16,8 @@ const adjList = {
 }
 
 function breadthFirstSearch(start, end) {
-	let q = [];
-	const visited = new Set();
-	if(start !== undefined){
-		q.push(start);
-		visited.add(start);
-	}
+	let q = [start];
+	const visited = new Set().add(start);
 	// const visited = new Set(q);
 
 	while(q.length){
