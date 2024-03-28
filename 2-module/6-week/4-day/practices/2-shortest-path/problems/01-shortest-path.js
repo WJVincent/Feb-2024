@@ -27,7 +27,7 @@ const adjList = {
 
 function shortestPath(start, end) {
 	const q = [[start]];
-	const visited = new Set();
+	const visited = new Set().add(start);
 	
 	while(q.length){
 		//1. grab the current path
