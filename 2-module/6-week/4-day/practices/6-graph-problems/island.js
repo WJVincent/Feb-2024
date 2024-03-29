@@ -7,7 +7,7 @@ function getNeighbors(row, col, graph) {
     if(graph[row] && graph[row][col + 1]) res.push([row, col + 1]);
 
     return res;
-}
+};
 
 
 function islandSize(row, col, graph) {
@@ -34,6 +34,6 @@ function islandSize(row, col, graph) {
     };
 
     return size;
-}
+};
 
 module.exports = [getNeighbors, islandSize];
