@@ -3,6 +3,10 @@
 - postman
 - http module
 
+## Note on the day
+
+Use postman as much as possible, it is a tool you will need to be comfortable with moving forward!
+
 ## Demo: http server
 
 - basics
