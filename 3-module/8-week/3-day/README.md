@@ -29,7 +29,11 @@ Converting that to promises might look something like this
 
 ```js
 function controller() {
-    main().then(rangeReq).then(guessReq).then(win).catch(handleError);
+    main()
+        .then(rangeReq)
+        .then(guessReq)
+        .then(win)
+        .catch(handleError);
 }
 ```
 
