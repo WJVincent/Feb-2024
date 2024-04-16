@@ -8,13 +8,12 @@
   
 ## assessment
 
-## reading pt1 (SOLO, 20m)
+## reading pt1 + practice (SOLO, 40m)
 
 - Browser Basics Objectives
 - Browser DevTools
 - Importing Scripts into HTML
-
-## practice: import scripts into HTML (SOLO, 20m)
+- practice: import scripts into HTML
 
 ## walkthrough: import scripts into HTML
 
