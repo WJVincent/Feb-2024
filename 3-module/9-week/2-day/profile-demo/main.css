@@ -1,0 +1,37 @@
+body {
+    background-color: blue;
+}
+
+#header{
+    color: white;
+    margin: auto;
+    width: fit-content;
+}
+
+#my-list {
+    color: orange;
+    font-size: 36px;
+    list-style-type: kannada;
+    border: 2px solid orange;
+    width: fit-content;
+    padding: 50px;
+    margin: 50px;
+}
+
+#my-list > li:hover {
+    color: limegreen;
+}
+
+.clock-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightblue;
+    width: 50%;
+    margin: auto;
+}
+
+.clock-item {
+    margin: 4px;
+    font-size: 24px;
+    color: black;
+}
